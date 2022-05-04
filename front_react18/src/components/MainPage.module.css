@@ -1,0 +1,14 @@
+.mainpage {
+  margin: 50px;
+}
+
+.mainPage__header {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainpage__logout {
+  margin-left: 10px;
+  color: dimgray;
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.departments__input {
+  margin-right: 10px;
+}
+
+.departments__list {
+  height: 300px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.departments__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.departments__delete {
+  color: dimgray;
+  cursor: pointer;
+}

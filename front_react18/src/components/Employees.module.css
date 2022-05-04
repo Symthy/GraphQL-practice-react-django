@@ -1,0 +1,26 @@
+.employees__list {
+  height: 300px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.employees__item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.employees__delete {
+  color: dimgray;
+  cursor: pointer;
+}
+
+.employees__edit {
+  color: dimgray;
+  cursor: pointer;
+}
+
+.employees_detail {
+  color: dimgray;
+  cursor: pointer;
+}

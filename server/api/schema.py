@@ -41,7 +41,7 @@ class EmployeeCreateMutation(relay.ClientIDMutation):
         employee = Employee(
             name=input.get('name'),
             join_year=input.get('join_year'),
-            department_id=from_global_id(input.get('department'))
+            department_id=from_global_id(input.get('department'))[1]
         )
         employee.save()
         return EmployeeCreateMutation(employee=employee)
@@ -59,7 +59,7 @@ class EmployeeUpdateMutation(relay.ClientIDMutation):
     @login_required
     def mutate_and_get_payload(root, info, **input):
         employee = Employee(
-            id=from_global_id(input.get('id'))
+            id=from_global_id(input.get('id'))[1]
         )
         employee.name = input.get('name')
         employee.join_year = input.get('join_year')
@@ -77,7 +77,7 @@ class EmployeeDeleteMutation(relay.ClientIDMutation):
     @login_required
     def mutate_and_get_payload(root, info, **input):
         employee = Employee(
-            id=from_global_id(input.get('id'))
+            id=from_global_id(input.get('id'))[1]
         )
         employee.delete()
         return EmployeeDeleteMutation(employee=None)

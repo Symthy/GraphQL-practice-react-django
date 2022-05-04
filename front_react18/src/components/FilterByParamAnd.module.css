@@ -1,0 +1,18 @@
+.filter_and__search {
+  margin-top: 10px;
+  color: dimgray;
+  cursor: pointer;
+}
+.filter_amd__list {
+  height: 300px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.filter_and__item {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+}
+.filter_and__input {
+  margin-right: 10px;
+}
